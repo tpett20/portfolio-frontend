@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import './Projects.css'
 
 function Projects(props) {
     const [projects, setProjects] = useState(null)
@@ -16,7 +17,7 @@ function Projects(props) {
 
     function loaded() {
         return projects.map(project => (
-            <div>
+            <div className="Projects">
                 <h1>{project.name}</h1>
                 <img src={project.image} alt={`${project.name} Screenshot`} />
                 <a href={project.git}>

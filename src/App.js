@@ -1,12 +1,12 @@
 import './App.css';
 // Components
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import { Route, Routes } from 'react-router';
 // Pages
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Projects from './pages/Projects/Projects';
 
 function App() {
   const URL = "http://localhost:4000/"
