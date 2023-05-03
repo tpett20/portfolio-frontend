@@ -9,7 +9,7 @@ import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
 
 function App() {
-  const URL = "http://localhost:4000/"
+  const URL = "https://thomas-pettersen-portfolio.herokuapp.com"
 
   return (
     <div>
