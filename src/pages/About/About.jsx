@@ -5,7 +5,8 @@ function About(props) {
     const [about, setAbout] = useState(null)
 
     async function getAboutData() {
-        fetch(`${URL}/about`)
+        // fetch(URL)
+        fetch('./about.json')
             .then(response => response.json())
             .then(json => setAbout(json))
             .catch(error => console.log(error))

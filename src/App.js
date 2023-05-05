@@ -12,12 +12,12 @@ function App() {
   const URL = "https://thomas-pettersen-portfolio.herokuapp.com"
 
   return (
-    <div>
+    <div className='container'>
       <Header />
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='/projects' element={<Projects URL={URL} />} />
-        <Route path='/about' element={<About URL={URL} />} />
+        <Route path='/projects' element={<Projects URL={`${URL}/projects`} />} />
+        <Route path='/about' element={<About URL={`${URL}/about`} />} />
       </Routes>
       <Footer />
     </div>

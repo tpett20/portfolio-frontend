@@ -6,7 +6,8 @@ function Projects(props) {
     const [projects, setProjects] = useState(null)
 
     async function getProjectsData() {
-        fetch(`${URL}/projects`)
+        // fetch(URL)
+        fetch('./projects.json')
             .then(response => response.json())
             .then(json => setProjects(json))
             .catch(error => console.log(error))
@@ -17,18 +18,25 @@ function Projects(props) {
     }, [])
 
     function loaded() {
-        return projects.map((project, idx) => (
-            <div className="Projects" key={idx}>
-                <h1>{project.name}</h1>
-                <img src={project.image} alt={`${project.name} Screenshot`} />
-                <a href={project.git}>
-                    <button>GitHub</button>
-                </a>
-                <a href={project.live}>
-                    <button>Live Site</button>
-                </a>
+        return (
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                {projects.map((project, idx) => (
+                    <>
+                        <div class="col">
+                            <div class="card">
+                                <img src={project.image} class="card-img-top" alt={`${project.name} Screenshot`}/>
+                                    <div class="card-body">
+                                        <h5 class="card-title">{project.name}</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <a href={project.live} class="card-link">Live Site</a>
+                                        <a href={project.git} class="card-link">GitHub</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </>
+                ))}
             </div>
-        ))
+        )
     }
 
     return projects ? loaded() : <h1>Loading...</h1>

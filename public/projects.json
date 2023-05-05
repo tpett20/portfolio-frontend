@@ -6,15 +6,15 @@
         "image": "https://i.imgur.com/fancLRQ.png"
     },
     {
-        "name": "Break the Ice",
-        "live": "https://break-the-ice-app.herokuapp.com/icebreakers",
-        "git": "https://github.com/tpett20/break-the-ice-app",
-        "image": "https://i.imgur.com/C6oiMRK.png"
-    }, 
-    {
         "name": "StubSaver",
         "live": "http://stubsaver.herokuapp.com/",
         "git": "https://github.com/tpett20/StubSaver",
         "image": "https://i.imgur.com/9cDqqCW.png"
+    },
+    {
+        "name": "Break the Ice",
+        "live": "https://break-the-ice-app.herokuapp.com/icebreakers",
+        "git": "https://github.com/tpett20/break-the-ice-app",
+        "image": "https://i.imgur.com/C6oiMRK.png"
     }
 ]
