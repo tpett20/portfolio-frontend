@@ -17,13 +17,16 @@ function Header(props) {
                             🏠 Home
                         </Link>
                         <Link to='/about' className="nav-link">
-                            📗 About
+                            🤓 About
                         </Link>
                         <Link to='/projects' className="nav-link">
                             🏗️ Projects
                         </Link>
                         <Link to='/projects' className="nav-link">
                             📄 Resume
+                        </Link>
+                        <Link to='/contact' className="nav-link">
+                            📬 Contact
                         </Link>
                     </div>
                 </div>
