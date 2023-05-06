@@ -19,21 +19,19 @@ function Projects(props) {
 
     function loaded() {
         return (
-            <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+            <div className="row row-cols-1 row-cols-md-2 g-4 mb-5">
                 {projects.map((project, idx) => (
-                    <>
-                        <div class="col">
-                            <div class="card">
-                                <img src={project.image} class="card-img-top" alt={`${project.name} Screenshot`}/>
-                                    <div class="card-body">
-                                        <h5 class="card-title">{project.name}</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <a href={project.live} class="card-link">Live Site</a>
-                                        <a href={project.git} class="card-link">GitHub</a>
-                                    </div>
-                            </div>
+                    <div className="col" key={idx}>
+                        <div className="card">
+                            <img src={project.image} className="card-img-top" alt={`${project.name} Screenshot`}/>
+                                <div className="card-body">
+                                    <h5 className="card-title">{project.name}</h5>
+                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href={project.live} className="card-link">Live Site</a>
+                                    <a href={project.git} className="card-link">GitHub</a>
+                                </div>
                         </div>
-                    </>
+                    </div>
                 ))}
             </div>
         )
