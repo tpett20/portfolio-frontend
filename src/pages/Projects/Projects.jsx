@@ -24,12 +24,17 @@ function Projects(props) {
                     <div className="col" key={idx}>
                         <div className="card">
                             <img src={project.image} className="card-img-top" alt={`${project.name} Screenshot`}/>
-                                <div className="card-body">
-                                    <h5 className="card-title">{project.name}</h5>
-                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <a href={project.live} className="card-link">Live Site</a>
-                                    <a href={project.git} className="card-link">GitHub</a>
-                                </div>
+                            <div className="card-body">
+                                <h5 className="card-title fw-bold">{project.name}</h5>
+                                <p className="card-text">{project.info}</p>
+                            </div>
+                            <ul className="list-group list-group-flush">
+                                <li className="list-group-item"><span className="fw-semibold">Technologies:</span> {project.technologies}</li>
+                            </ul>
+                            <div className="card-body">
+                                <a href={project.live} className="card-link">Live Site</a>
+                                <a href={project.git} className="card-link">GitHub</a>
+                            </div>
                         </div>
                     </div>
                 ))}

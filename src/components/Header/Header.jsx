@@ -17,7 +17,7 @@ function Header(props) {
                             🏠 Home
                         </Link>
                         <Link to='/about' className="nav-link">
-                            🤓 About
+                            👨‍💻 About
                         </Link>
                         <Link to='/projects' className="nav-link">
                             🏗️ Projects
