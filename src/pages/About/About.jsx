@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react"
+import Loading from "../../components/Loading/Loading"
 
 function About(props) {
     const URL = props.URL
     const [about, setAbout] = useState(null)
 
     async function getAboutData() {
-        // fetch(URL)
         fetch('./about.json')
             .then(response => response.json())
             .then(json => setAbout(json))
@@ -19,7 +19,7 @@ function About(props) {
     function loaded() {
         return (
             <>
-                <h1>About</h1>
+                <h1 className="mb-3">👨‍💻 About</h1>
                 <div className="row">
                     <div className="col-12 col-xl-9 col-xxl-8">
                         <p>{about.bio}</p>
@@ -80,7 +80,7 @@ function About(props) {
         )
     }
 
-    return about ? loaded() : <h1>Loading...</h1>
+    return about ? loaded() : <Loading/>
 }
 
 export default About

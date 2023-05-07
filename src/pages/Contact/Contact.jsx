@@ -1,7 +1,7 @@
 export default function Contact() {
     function copyText() {
         navigator.clipboard.writeText("ThomasPettersen20@gmail.com")
-        // Code Source: https://www.geeksforgeeks.org/how-to-create-copy-to-clipboard-button/
+        // Source: https://www.geeksforgeeks.org/how-to-create-copy-to-clipboard-button/
     }
 
     return (

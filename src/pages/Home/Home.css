@@ -1,0 +1,9 @@
+.home-links {
+    transition: 0.2s;
+}
+
+.home-links:hover {
+    color: blueviolet;
+    scale: 1.1;
+    transition: 0.2s;
+}

@@ -2,6 +2,18 @@ import { Link } from "react-router-dom"
 import './Header.css'
 
 function Header(props) {
+    function downloadResume() {
+        fetch('Thomas-Pettersen-Resume.pdf')
+            .then(response => response.blob())
+            .then(blob => {
+                const fileURL = window.URL.createObjectURL(blob)
+                let alink = document.createElement('a')
+                alink.href = fileURL
+                alink.download = 'Thomas-Pettersen-Resume.pdf'
+                alink.click()
+            })
+    }
+
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary mt-2 mb-3 rounded shadow-sm">
             <div className="container-fluid">
@@ -22,9 +34,9 @@ function Header(props) {
                         <Link to='/projects' className="nav-link">
                             🏗️ Projects
                         </Link>
-                        <Link to='/projects' className="nav-link">
+                        <a onClick={downloadResume} className="resume-link nav-link">
                             📄 Resume
-                        </Link>
+                        </a>
                         <Link to='/contact' className="nav-link">
                             📬 Contact
                         </Link>

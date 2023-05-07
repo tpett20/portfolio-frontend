@@ -5,5 +5,7 @@
 }
 
 body {
-  background-color: lightblue;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%) no-repeat center center fixed;
+  background-size: cover;
+  /* Source: 010 Winter Neva from https://webgradients.com/ */
 }
