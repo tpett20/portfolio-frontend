@@ -7,7 +7,7 @@ function Projects(props) {
     const [projects, setProjects] = useState(null)
 
     async function getProjectsData() {
-        fetch('./projects.json')
+        fetch(URL)
             .then(response => response.json())
             .then(json => setProjects(json))
             .catch(error => console.log(error))
@@ -34,8 +34,8 @@ function Projects(props) {
                                     <li className="list-group-item"><span className="fw-semibold">Technologies:</span> {project.technologies}</li>
                                 </ul>
                                 <div className="card-body">
-                                    <a href={project.live} className="card-link">Live Site</a>
-                                    <a href={project.git} className="card-link">GitHub</a>
+                                    <a href={project.live} target="_blank" rel="noreferrer noopener" className="card-link">Live Site</a>
+                                    <a href={project.git} target="_blank" rel="noreferrer noopener" className="card-link">GitHub</a>
                                 </div>
                             </div>
                         </div>
