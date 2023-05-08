@@ -12,6 +12,7 @@ function Header(props) {
                 alink.download = 'Thomas-Pettersen-Resume.pdf'
                 alink.click()
             })
+        // Source: https://www.geeksforgeeks.org/how-to-download-pdf-file-in-reactjs/
     }
 
     return (
