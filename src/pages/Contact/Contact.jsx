@@ -11,7 +11,7 @@ export default function Contact() {
                     Contact
                 </div>
                 <div className="card-body">
-                    <div className="d-flex justify-content-center align-items-center">
+                    <div className="d-flex justify-content-center align-items-center text-break">
                         <h5 className="card-title mb-0">ThomasPettersen20@gmail.com</h5>
                         <button onClick={copyText} className="btn btn-sm btn-outline-secondary ms-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-files" viewBox="0 0 16 16">
