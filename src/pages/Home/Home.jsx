@@ -26,7 +26,7 @@ function Home(props) {
                 </div>
             </div>
             <div className='container'>
-                <div className="row border border-secondary rounded shadow-sm justify-content-evenly mt-3 mt-lg-5 text-center">
+                <div className="row border border-secondary rounded shadow-sm justify-content-evenly mt-3 mt-lg-5 mb-3 text-center">
                     <div className="col-4 col-lg-2 my-2">
                         <a href="https://github.com/tpett20" target="_blank" rel="noreferrer noopener" className="home-links btn">
                             <p><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
