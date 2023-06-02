@@ -18,7 +18,7 @@ export default function Contact() {
             }, (error) => {
                 console.log(error.text);
             });
-            e.target.reset()
+        e.target.reset()
     }
 
     return (
@@ -42,17 +42,17 @@ export default function Contact() {
             <div className="col-12 col-md-11 col-lg-10 col-xl-8">
                 <h3>Send a Message 📝</h3>
                 <form ref={form} onSubmit={sendEmail}>
-                    <div className="mb-2">
-                        <label htmlFor="name" className="form-label">Name</label>
+                    <div className="form-floating mb-3">
                         <input type="text" name="from_name" id="name" placeholder="First Last" className="form-control" required />
+                        <label htmlFor="name">Name</label>
                     </div>
-                    <div className="mb-2">
-                        <label htmlFor="email" className="form-label">Email</label>
+                    <div className="form-floating mb-3">
                         <input type="email" name="email" id="email" placeholder="email@address.com" className="form-control" required />
+                        <label htmlFor="email">Email</label>
                     </div>
-                    <div className="mb-3"> 
-                        <label htmlFor="message" className="form-label">Message</label>
-                        <textarea name="message" id="message" rows="3" className="form-control" />
+                    <div className="form-floating mb-3">
+                        <textarea name="message" id="message" className="form-control" placeholder="Type your message here" style={{ height: "100px" }} />
+                        <label htmlFor="message">Message</label>
                     </div>
                     <button className="btn btn-primary">Send</button>
                 </form>
