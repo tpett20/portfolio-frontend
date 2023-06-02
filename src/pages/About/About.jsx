@@ -5,7 +5,7 @@ function About() {
         <>
             <h1 className="mb-3">👨‍💻 About</h1>
             <div className="row">
-                <div className="col-12 col-xl-9 col-xxl-8">
+                <div className="col-12 col-l-11 col-xl-9">
                     <p>{about.bio}</p>
                 </div>
             </div>

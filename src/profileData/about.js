@@ -5,7 +5,7 @@ const aboutData = {
     languages: ["JavaScript", "Python", "HTML", "CSS", "EJS", "SQL"],
     frameworks: ["Express.js", "Django", "React", "Bootstrap", "Mongoose"],
     databases: ["MongoDB", "PostgreSQL"],
-    other: ["RESTful Routing", "Debugging"]
+    other: ["Node.js", "RESTful Routing", "Git", "Debugging", "Algorithms"]
 }
 
 export { aboutData }
