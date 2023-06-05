@@ -54,7 +54,7 @@ export default function Contact() {
                         <textarea name="message" id="message" className="form-control" placeholder="Type your message here" style={{ height: "100px" }} />
                         <label htmlFor="message">Message</label>
                     </div>
-                    <button className="btn btn-primary">Send</button>
+                    <button className="btn btn-primary mb-3">Send</button>
                 </form>
             </div>
         </>
