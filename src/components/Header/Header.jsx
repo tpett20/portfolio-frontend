@@ -35,6 +35,9 @@ function Header(props) {
                         <Link to='/projects' className="nav-link">
                             🏗️ Projects
                         </Link>
+                        <Link to='/teaching' className="nav-link">
+                            🍎 Teaching
+                        </Link>
                         <li onClick={downloadResume} className="resume-link nav-link">
                             📄 Resume
                         </li>
