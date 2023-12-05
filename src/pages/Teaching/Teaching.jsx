@@ -1,18 +1,15 @@
-function Teaching() {
-    const lessons = [
-        {
-            name: "Guess the Magic Number",
-            link: "https://scratch.mit.edu/projects/920755443",
-            image: "https://i.imgur.com/u5XY6Jn.png",
-            info: "Guess the Magic Number by clicking an option. The squirrel will tell you if it's higher or lower. Celebrate when you find it!",
-            platform: "Scratch",
-            concepts: "Conditional Statements, Random Numbers, For Loops, Clones"
-        }
-    ]
+import { descriptionData as description, lessonsData as lessons } from "../../profileData/teaching"
 
+function Teaching() {
     return (
         <>
-            <h1 className="mb-4">🍎 Teaching</h1>
+            <h1 className="mb-3">🍎 Teaching</h1>
+            <div className="row">
+                <div className="col-12 col-l-11 col-xl-9">
+                    <p>{description}</p>
+                </div>
+            </div>
+            <h3>Lessons</h3>
             <div className="row row-cols-1 row-cols-md-2 g-4 mb-5">
                 {lessons.map((lesson, idx) => (
                     <div className="col" key={idx}>
@@ -30,6 +27,9 @@ function Teaching() {
                             </ul>
                             <div className="card-body">
                                 <a href={lesson.link} target="_blank" rel="noreferrer noopener" className="card-link">Link to Site</a>
+                                {lesson.classPrompt ? (
+                                    <a href={lesson.classPrompt} target="_blank" rel="noreferrer noopener" className="card-link">Class Prompt</a>
+                                ) : <></>}
                             </div>
                         </div>
                     </div>
