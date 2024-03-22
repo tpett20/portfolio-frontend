@@ -22,7 +22,7 @@ function Teaching() {
                                 <p className="card-text">{lesson.info}</p>
                             </div>
                             <ul className="list-group list-group-flush">
-                                <li className="list-group-item"><span className="fw-semibold">Platform:</span> {lesson.platform}</li>
+                                <li className="list-group-item"><span className="fw-semibold">Language/ Platform:</span> {lesson.platform}</li>
                                 <li className="list-group-item"><span className="fw-semibold">Concepts:</span> {lesson.concepts}</li>
                             </ul>
                             <div className="card-body">
