@@ -2,6 +2,15 @@ const descriptionData = "As a coding instructor, I develop custom, project-based
 
 const lessonsData = [
     {
+        name: "Python Terminal and Turtle Projects",
+        link: "https://github.com/tpett20/Python-Lessons",
+        classPrompt: "",
+        image: "https://i.imgur.com/iRFTOUD.png",
+        info: "A GitHub repo with a collection of project-based lessons that run in a terminal or with Python Turtle.",
+        platform: "Python",
+        concepts: "Conditional Logic, Data Structures, Variables, Loops"
+    },
+    {
         name: "Guess the Magic Number",
         link: "https://scratch.mit.edu/projects/920755443/",
         classPrompt: "",
