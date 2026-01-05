@@ -17,7 +17,7 @@ const projectsData = [
     },
     {
         name: "StubSaver",
-        live: "http://stubsaver.herokuapp.com/",
+        live: "",
         git: "https://github.com/tpett20/StubSaver",
         image: "https://i.imgur.com/dF23Kou.png",
         info: "An app for saving the concerts and sporting events you've attended.",
@@ -25,7 +25,7 @@ const projectsData = [
     },
     {
         name: "Break the Ice",
-        live: "https://break-the-ice-app.herokuapp.com/icebreakers",
+        live: "",
         git: "https://github.com/tpett20/break-the-ice-app",
         image: "https://i.imgur.com/SE99KGc.png",
         info: "An app for storing icebreaker questions and responses.",

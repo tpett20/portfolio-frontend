@@ -18,7 +18,9 @@ function Projects() {
                                 <li className="list-group-item"><span className="fw-semibold">Technologies:</span> {project.technologies}</li>
                             </ul>
                             <div className="card-body">
-                                <a href={project.live} target="_blank" rel="noreferrer noopener" className="card-link">Live Site</a>
+                                {project.live && (
+                                    <a href={project.live} target="_blank" rel="noreferrer noopener" className="card-link">Live Site</a>
+                                )}
                                 <a href={project.git} target="_blank" rel="noreferrer noopener" className="card-link">GitHub</a>
                             </div>
                         </div>
